@@ -6,7 +6,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] Prefabs;
     private float spawnRangeX = 20;
-    private float spawnRangeY = 15;
+    private float spawnRangeY = 5;
     private float spawnPosZ = 0;
     private float startDelay = 2;
     private float spawnInterval = 1.5f;
@@ -24,7 +24,7 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomCube()
     {
         int cubeIndex = Random.Range(0, Prefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(spawnRangeX, spawnRangeY), 0, spawnPosZ);
+        Vector3 spawnPos = new Vector3(spawnRangeX, Random.Range(spawnRangeY, -spawnRangeY), spawnPosZ);
 
         Instantiate(Prefabs[cubeIndex], spawnPos, Prefabs[cubeIndex].transform.rotation);
     }

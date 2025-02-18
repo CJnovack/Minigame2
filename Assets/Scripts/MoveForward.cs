@@ -9,7 +9,7 @@ public class MoveForward : MonoBehaviour
     {
         
     }
-    public float speed = 10.0f;
+    public float speed = 20.0f;
     // Update is called once per frame
     void Update()
     {

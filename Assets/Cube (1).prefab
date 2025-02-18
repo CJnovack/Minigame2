@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3217702844232567038}
   - component: {fileID: 6167089403900862670}
   - component: {fileID: 780255755306824585}
+  - component: {fileID: -4712289784476387854}
+  - component: {fileID: -6522331784885837069}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -60,6 +62,9 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -100,12 +105,12 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.102501, y: 1.1440195, z: 1.0977376}
+  m_Center: {x: 0.0006985313, y: 0.012439426, z: 0.010410962}
 --- !u!114 &780255755306824585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,3 +124,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+--- !u!114 &-4712289784476387854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5693526574794935501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 979adfdbd8e35344c8025c92390496bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6522331784885837069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5693526574794935501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4edd66da9d174844a8bdd680e82184b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
